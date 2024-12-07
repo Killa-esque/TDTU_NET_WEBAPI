@@ -1,0 +1,133 @@
+.room-details .icon-Home {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  fill: currentcolor;
+}
+
+.room-details .icon-kitchen {
+  display: block;
+  height: 24px;
+  width: 24px;
+  fill: currentcolor;
+}
+
+.room-details .btn-bookroom {
+  background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+  transition: background 0.3s;
+}
+
+.room-details .btn-bookroom:hover {
+  background: rgb(243, 69, 107);
+  /* Lightened by 10% */
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.room-details .btn-bookroom:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.room-swiper .swiper-slide img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  /* Thay đổi tỉ lệ thành 16:9 hoặc 4:3 */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+.host-info {
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  /* Màu border */
+}
+
+.host-info-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.host-info-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.host-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  /* Làm tròn avatar */
+  object-fit: cover;
+}
+
+.host-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.host-details {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.response-rate {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.host-button {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #e11d48;
+  /* Màu text */
+}
+
+/* Thay đổi màu sắc của ngôi sao Rate */
+.custom-rate .ant-rate-star-full .ant-rate-star-second {
+  color: black !important;
+  /* Thay đổi màu ngôi sao đã chọn thành đen */
+}
+
+.custom-rate .ant-rate-star-full .ant-rate-star-first {
+  color: black !important;
+  /* Thay đổi màu khi hover thành đen */
+}
+
+/* Đổi màu hover ngày trong RangePicker */
+.ant-picker-cell-inner:hover {
+  background-color: #f43f5e !important;
+  /* Màu bg-rose (#f43f5e) */
+  color: #fff !important;
+  /* Thay đổi màu chữ để đảm bảo tương phản */
+  border-radius: 4px;
+  /* Thêm góc bo tròn nếu cần */
+}
+
+/* Đổi màu các ngày được chọn */
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: #f43f5e !important;
+  /* Màu bg-rose */
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+/* Đổi màu các ngày trong phạm vi được chọn */
+.ant-picker-cell-in-range .ant-picker-cell-inner {
+  background-color: #fee2e2 !important;
+  /* Màu nhạt hơn của bg-rose */
+  color: #f43f5e !important;
+}

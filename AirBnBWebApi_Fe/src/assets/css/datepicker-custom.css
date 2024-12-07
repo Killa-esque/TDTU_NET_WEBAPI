@@ -1,0 +1,78 @@
+/* Tùy chỉnh chung cho RangePicker */
+.custom-range-picker {
+  border: none !important;
+  /* Loại bỏ border */
+  background-color: #f9fafb;
+  /* Màu nền nhạt */
+  padding: 12px 16px;
+  /* Khoảng cách trong */
+  border-radius: 8px;
+  /* Bo góc */
+  font-size: 14px;
+  /* Cỡ chữ */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* Đổ bóng nhẹ */
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover cho RangePicker */
+.custom-range-picker:hover {
+  background-color: #f3f4f6;
+  /* Đổi màu nền khi hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* Tăng đổ bóng */
+}
+
+/* Focus cho RangePicker */
+.custom-range-picker:focus-within {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+  /* Highlight border khi focus */
+}
+
+/* Tùy chỉnh popup cho RangePicker */
+.custom-range-picker-popup {
+  border-radius: 12px;
+  /* Bo góc popup */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Đổ bóng mạnh hơn */
+  overflow: hidden;
+  /* Bo viền các cạnh */
+}
+
+/* Input trong RangePicker */
+.custom-range-picker input {
+  font-size: 14px;
+  /* Đặt cỡ chữ */
+  color: #374151;
+  /* Màu chữ */
+}
+
+/* Placeholder */
+.custom-range-picker .ant-picker-input>input::placeholder {
+  color: #9ca3af;
+  /* Placeholder nhạt hơn */
+}
+
+/* Thay đổi khoảng cách giữa các phần tử trong popup */
+.custom-range-picker-popup .ant-picker-cell {
+  padding: 10px;
+  /* Tăng khoảng cách các ngày */
+}
+
+/* Header trong popup */
+.custom-range-picker-popup .ant-picker-header {
+  background-color: #f3f4f6;
+  /* Màu nền header */
+  border-bottom: 1px solid #e5e7eb;
+  /* Đường viền dưới */
+  font-weight: 500;
+  /* Đậm hơn */
+}
+
+/* Footer (nếu có nút OK hoặc thời gian) */
+.custom-range-picker-popup .ant-picker-footer {
+  background-color: #f9fafb;
+  /* Màu nền footer */
+  padding: 10px 12px;
+  /* Khoảng cách trong */
+}
